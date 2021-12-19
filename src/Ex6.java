@@ -27,11 +27,14 @@ public class Ex6 {
     public static int[] intersection(int[] b, int[] c){
         int count1=1;
         int count2=1;
-        int[] a1= new int[count1];
-        int[] a2= new int[count2];
-        int[] a= new int[count1 + count2];
+        int[] a1= new int[0];
+        int[] a2= new int[0];
+        int[] a= new int[0];
             for (int m=0; m< b.length; m++){
                 for(int n=0; n< c.length; n++){
+                    a1= new int[count1];
+                    a2= new int[count2];
+                    a= new int[count1 + count2];
                     if(b[m]==c[n]){
                         a1[count1-1]=b[m];
                         count1++;

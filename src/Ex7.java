@@ -4,6 +4,9 @@ public class Ex7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char[] ttt=new char[9];
+        for (int i=0; i< ttt.length; i++){
+            ttt[i]=scanner.nextLine().charAt(0);
+        }
         int clear= scanner.nextInt();
         int pos=scanner.nextInt();
         int placement=scanner.nextInt();
