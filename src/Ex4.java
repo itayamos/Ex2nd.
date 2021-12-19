@@ -10,8 +10,9 @@ public class Ex4 {
     public static int[] dupNum(int[] a){
         int count = 0;
         int checker;
-        int[] b = new int[a.length-count];
+        int[] b = new int[0];
         for (int i=0; i< a.length; i++) {
+            b = new int[a.length-count];
             checker = a[i];
             for (int j = 0; j < a.length; j++) {
                 if (a[i] == a[j + 1]) {
